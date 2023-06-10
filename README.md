@@ -2,7 +2,7 @@
 
 ![demo](https://github.com/jt-ziolo/nvim-bullseye/assets/14256313/ec42333f-5766-422b-8660-abd89a7b81c5)
 
-nvim-bullseye is a Lua Neovim plugin that provides convenient keybindings for editing and pasting text in Neovim. It allows you to perform actions such as editing in insert or append mode before/after the current word and pasting from the default register. 
+nvim-bullseye is a Lua Neovim plugin that provides convenient keybindings for editing and pasting text in Neovim. It allows you to perform actions such as editing in insert or append mode and pasting from the default register before or after the current word. 
 
 > __Note__  
 > This is a new project. New features or changes to current functionality are likely (keeping disruptive changes like changes to existing function names to a minimum). Suggestions for how to improve the plugin and pull requests are welcome.
@@ -22,8 +22,15 @@ use { "jt-ziolo/nvim-bullseye" }
 
 ### Keybindings
 
-The following keybindings are available for the plugin, but they are not initially set. You can customize them to your liking:
+Keybinds should target the following functions:
+| Function                 | Valid Mode(s) |
+|--------------------------|---------------|
+| .startAppendAfterWord()  | n             |
+| .startInsertBeforeWord() | n             |
+| .pasteBeforeN()          | n             |
+| .pasteAfterN()           | n             |
 
+Example:
 ```lua
 vim.keymap.set({"n"}, "<leader>a", "<cmd>lua require('nvim-bullseye').startAppendAfterWord()<CR>", { desc = "BullseyeStartAppendAfterWord" })
 vim.keymap.set({"n"}, "<leader>i", "<cmd>lua require('nvim-bullseye').startInsertBeforeWord()<CR>", { desc = "BullseyeStartInsertBeforeWord" })
