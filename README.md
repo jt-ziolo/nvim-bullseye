@@ -1,4 +1,4 @@
-# nvim-bullseye
+# 🎯 nvim-bullseye
 
 ![demo](https://github.com/jt-ziolo/nvim-bullseye/assets/14256313/ec42333f-5766-422b-8660-abd89a7b81c5)
 
