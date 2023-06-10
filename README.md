@@ -1,5 +1,7 @@
 # nvim-bullseye
 
+![demo](https://github.com/jt-ziolo/nvim-bullseye/assets/14256313/ec42333f-5766-422b-8660-abd89a7b81c5)
+
 nvim-bullseye is a Lua Neovim plugin that provides convenient keybindings for editing and pasting text in Neovim. It allows you to perform actions such as editing in insert or append mode before/after the current word and pasting from the default register. 
 
 ## Keybindings
